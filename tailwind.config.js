@@ -7,6 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        border: '#e5e7eb',
+        background: '#ffffff',
+        foreground: '#232333',
         zoom: {
           blue: '#0E72ED',
           'blue-dark': '#0B5BBD',
