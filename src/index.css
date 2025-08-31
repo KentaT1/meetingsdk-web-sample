@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/80 border border-white/20;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-zoom-blue focus:ring-4 focus:ring-zoom-blue/10 transition-all duration-200 outline-none;
+  }
+  
+  .btn-primary {
+    @apply bg-zoom-blue hover:bg-zoom-blue-dark text-white font-medium px-6 py-3 rounded-xl transition-all duration-200 transform hover:scale-105 focus:ring-4 focus:ring-zoom-blue/20 outline-none;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium px-6 py-3 rounded-xl transition-all duration-200 focus:ring-4 focus:ring-gray-200/50 outline-none;
+  }
+}
