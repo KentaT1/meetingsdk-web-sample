@@ -12,3 +12,4 @@ export.sh
 /Components/node_modules
 /Components/yarn.lock
 CLAUDE.md
+.env
